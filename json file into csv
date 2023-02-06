@@ -1,0 +1,36 @@
+<code>import json
+import csv
+
+with open('data.json') as json_file:
+    data = json.load(json_file)
+    for p in data['data']:
+        print('id: ' + p['id'])
+        print('name: ' + p['name'])
+        print('age: ' + p['age'])
+        print('gender: ' + p['gender'])
+        print('address: ' + p['address'])
+        print('phone: ' + p['phone'])
+        print('')
+</code>
+This code is printing the data in the console.
+I want to store this data in a csv file.
+I have written the following code:
+<code>import json
+import csv
+
+with open('data.json') as json_file:
+    data = json.load(json_file)
+    for p in data['data']:
+        print('id: ' + p['id'])
+        print('name: ' + p['name'])
+        print('age: ' + p['age'])
+        print('gender: ' + p['gender'])
+        print('address: ' + p['address'])
+        print('phone: ' + p['phone'])
+        print('')
+
+with open('data.csv', 'w') as csv_file:
+    writer = csv.writer(csv_file)
+    writer.writerow(['id', 'name', 'age', 'gender', 'address', 'phone'])
+    writer.writerow([p['id'], p['name'], p['age'], p['gender'], p['address'], p['phone']])
+</code>
