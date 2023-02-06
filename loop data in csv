@@ -1,0 +1,11 @@
+<code>import json
+import csv
+
+with open('data.json') as json_file:
+    data = json.load(json_file)
+    with open('data.csv', 'w') as csv_file:
+        writer = csv.writer(csv_file)
+        writer.writerow(['id', 'name', 'age', 'gender', 'address', 'phone'])
+        for p in data['data']:
+            writer.writerow([p['id'], p['name'], p['age'], p['gender'], p['address'], p['phone']])
+</code>
