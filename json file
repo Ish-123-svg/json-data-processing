@@ -1,0 +1,30 @@
+I have a json file which looks like this:
+<code>{
+    "data": [
+        {
+            "id": "1",
+            "name": "abc",
+            "age": "20",
+            "gender": "male",
+            "address": "xyz",
+            "phone": "1234567890"
+        },
+        {
+            "id": "2",
+            "name": "def",
+            "age": "21",
+            "gender": "female",
+            "address": "abc",
+            "phone": "1234567890"
+        },
+        {
+            "id": "3",
+            "name": "ghi",
+            "age": "22",
+            "gender": "male",
+            "address": "def",
+            "phone": "1234567890"
+        }
+    ]
+}
+</code>
